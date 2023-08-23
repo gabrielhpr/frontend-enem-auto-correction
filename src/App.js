@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { TextAreaEnem } from "./components/TextAreaEnem";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className="h-screen">
+				{/* TOP NAVIGATION */}
+				<div className="w-100 py-5 pl-5 font-bold text-xl bg-cyan-500">
+					<p className="text-neutral-50">
+						Enem Auto Correction App
+					</p>
+				</div>
+
+				<div className="bg-white pt-10 pb-3 max-h-screen">
+					<TextAreaEnem/>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default App;
