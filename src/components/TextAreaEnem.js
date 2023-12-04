@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 export function TextAreaEnem() {
     const [prediction, setPrediction] = useState('');
     const [essay, setEssay] = useState('');
@@ -41,6 +42,18 @@ export function TextAreaEnem() {
                         </div>
                         <div className="px-2 py-2 bg-white rounded-md text-black">
                             Nota: {prediction}
+                        </div>
+                    </div>
+                    <div className="flex items-center py-2 px-3 bg-gray-200 text-white">
+                        <div>
+                            <button className="px-7 py-2.5 text-md font-medium text-center text-white bg-blue-400 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-600 hover:bg-blue-500">
+                                RMV2
+                            </button>
+                        </div>
+                        <div className="px-2 py-2 rounded-md text-black">
+                            <button className="px-7 py-2.5 text-md font-medium text-center text-white bg-blue-400 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-600 hover:bg-blue-500">
+                                CMTerc
+                            </button>
                         </div>
                     </div>
                     <div className="py-2 px-4 bg-white rounded-b-lg ">
